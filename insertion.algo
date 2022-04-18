@@ -1,0 +1,21 @@
+/* *** insertion-sort *** */
+PROCEDURE insertion-sort(VAR tab : ARRAY_OF INTEGER)
+VAR
+i,j,n : INTEGER;
+tmp:FLOAT;
+BEGIN
+/défunir la taille de tab
+n:= tab.length;
+FOR i FROM 1 TO n-1 STEP 1  DO
+//conserver la valeur à insérer
+tmp:=tab[i];
+//déplacer les élements i-1 vers la droite tant que leur valeur  est supérieur à tmp
+j:=i;
+WHILE (tab[j-1]>tmp) and (j<>1)DO
+tab[j]:=t[j-1]
+j:=j-1;
+END_WHILE
+//effectuer le bon emplacement  de l'élement 
+tab[j]:=tmp;
+END_FOR
+END
