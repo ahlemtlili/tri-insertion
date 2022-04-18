@@ -11,7 +11,7 @@ FOR i FROM 1 TO n-1 STEP 1  DO
 tmp:=tab[i];
 //déplacer les élements i-1 vers la droite tant que leur valeur  est supérieur à tmp
 j:=i;
-WHILE (tab[j-1]>tmp) and (j<>1)DO
+WHILE (tab[j-1]>tmp) and (j>=0)DO
 tab[j]:=t[j-1]
 j:=j-1;
 END_WHILE
